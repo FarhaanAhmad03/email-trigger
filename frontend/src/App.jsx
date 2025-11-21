@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // 🔥 Read backend URL from environment (Vercel)  
 // If not found, fall back to localhost for local testing
-const API_BASE = import.meta.env?.VITE_BACKEND_URL || "http://localhost:5000";
+const API_BASE = "https://email-trigger-backend2.onrender.com";
 
 function App() {
   const [candidates, setCandidates] = useState([]);
