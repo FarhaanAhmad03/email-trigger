@@ -17,7 +17,7 @@ function App() {
     setUploading(true);
     setMessage("");
     try {
-      const res = await axios.post("https://email-trigger-backend.onrender.com/api/email/upload"
+      const res = await axios.post("http://localhost:5000/api/email/upload"
 , formData, {
 
         headers: { "Content-Type": "multipart/form-data" },
@@ -41,7 +41,7 @@ function App() {
     setSending(true);
     setMessage("");
     try {
-      const res = await axios.post("https://email-trigger-backend.onrender.com/api/email/send"
+      const res = await axios.post("http://localhost:5000/api/email/send"
 );
 
       setMessage(res.data.message || "Emails sent.");
